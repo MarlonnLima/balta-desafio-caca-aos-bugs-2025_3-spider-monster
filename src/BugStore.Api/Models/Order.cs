@@ -1,4 +1,4 @@
-namespace BugStore.Models;
+namespace BugStore.Api.Models;
 
 public class Order
 {
@@ -9,5 +9,5 @@ public class Order
     public DateTime CreatedAt { get; set; }
     public DateTime UpdatedAt { get; set; }
 
-    public List<OrderLine> Lines { get; set; } = null;
+    public List<OrderLine> Lines { get; set; } = new();
 }
